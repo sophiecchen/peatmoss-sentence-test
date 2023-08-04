@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import re
-#from sentence_transformers import SentenceTransformer
-import sentence_transformers
+from sentence_transformers import SentenceTransformer
 
 def regex(text):
     regex = "[a-zA-Z]+at"
@@ -16,6 +15,6 @@ def regex(text):
 
 def sentence():
     real = "all-MiniLM-L6-v2"
-    model = sentence_transformers.SentenceTransformer(real)
+    model = SentenceTransformer(real)
 
     return 0
