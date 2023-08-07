@@ -4,11 +4,11 @@
 # run with pytest
 
 import unittest
-from peatmoss_sentence_test import main
+from peatmoss_sentence_test import side
 
 class Test(unittest.TestCase):
     def test_main(self):
-        self.assertEqual(main.from_import(), 0)
+        self.assertEqual(side.pure_import(), 0)
 
 if __name__ == '__main__':
     unittest.main()
